@@ -1,0 +1,87 @@
+:root {
+  --accent: #8c52ff;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background: #111;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.search-form {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.search-form input {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  display: none;
+}
+
+.search-form i {
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-form:hover input {
+  display: inline-block;
+  width: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
